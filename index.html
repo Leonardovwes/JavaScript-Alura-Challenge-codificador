@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de texto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <main>
+      <section class="left__side">
+          <header>
+              <img class="header__logo" src="./imgs/Vector.png" alt="Logo alura em azul marinho">
+          </header>
+
+          <div class="container__left">
+              <div class="insert__text">
+                  <input id="textInput" placeholder="Digite seu texto" type="text">
+              </div>
+
+              <div class="alert">
+                  <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Apenas letras minúsculas e sem acento.</p>
+              </div>
+
+              <div class="btns">
+                  <button class="criptografar" onclick="performOperation('encrypt')">Criptografar</button>
+                  <button class="descriptografar" onclick="performOperation('decrypt')">Descriptografar</button>
+              </div>
+          </div>
+      </section>
+
+      <section class="right__side">
+          <div class="container__right">
+              <img src="./imgs/High quality products 1 1.svg" alt="Imagem menino com uma lupa">
+              <h2 id="resultTitle">Nenhuma mensagem encontrada</h2>
+              <p id="resultText">Digite um texto que você deseja criptografar ou descriptografar.</p>
+              <button id="copyButton" onclick="copyText()">Copiar</button>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+    Desenvolvido por Leonardo Varela Weschenfelder
+  </footer>
+
+  <script src="./app.js"></script>
+
+</body>
+</html>
